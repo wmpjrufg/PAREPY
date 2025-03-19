@@ -1,4 +1,4 @@
-"""Common library for PAREpy toolbox"""
+"""PAREpy toolbox: Useful functions"""
 from typing import Union, Callable
 import re
 from datetime import datetime
@@ -193,7 +193,7 @@ def sampling(n_samples: int, model: dict, variables_setup: list) -> np.ndarray:
             for m in range(time_analysis):
                 time_sampling[cont, 0] = int(m)
                 cont += 1
-        random_sampling = np.concatenate((random_sampling, time_sampling), axis=1)   
+        random_sampling = np.concatenate((random_sampling, time_sampling), axis=1)
 
     return random_sampling
 
